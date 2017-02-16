@@ -18,4 +18,5 @@ namespace ClassLibrary
         public string Postcode { get; set; }
         public int staffid { get; set; }
     }
+    //some changes here
 }
