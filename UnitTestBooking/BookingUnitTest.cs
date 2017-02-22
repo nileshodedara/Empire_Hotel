@@ -143,12 +143,933 @@ namespace ClassLibrary
             clsBooking aBooking = new clsBooking();
             //boolean var to store the result of the validation
             Boolean Found = false;
-            //create some test data to use with the method
-            Int32 BookingID = 1;
+            //var to store NumOfNights
+            string NumOfNights;
+            //asign some data to var
+            NumOfNights = "1";
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
             //invoke the method
-            Found = aBooking.Validate(BookingID);
+            Found = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
             //test to see that two values are same
             Assert.IsTrue(Found);
+        }
+
+        [TestMethod]
+        public void NumOfNightsMinLessOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights;
+            //asign some data to var
+            NumOfNights = "0";
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void NumOfNightsMinBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights;
+            //asign some data to var
+            NumOfNights = "1";
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void NumOfNightsMinPlusOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights;
+            //asign some data to var
+            NumOfNights = "2";
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void NumOfNightsMaxLessOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights;
+            //asign some data to var
+            NumOfNights = "29";
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void NumOfNightsMaxBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights;
+            //asign some data to var
+            NumOfNights = "29";
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void NumOfNightsMaxPlusOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights;
+            //asign some data to var
+            NumOfNights = "31";
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void NumOfNightsMidBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights;
+            //asign some data to var
+            NumOfNights = "15";
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void NumOfNightsExtreamMax()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights;
+            //asign some data to var
+            NumOfNights = "1000";
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateExtremeMin()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(-100);
+            //var to store BookingDate
+            string BookigDate =TestDate.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateMinLessOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(-1);
+            //var to store BookingDate
+            string BookigDate = TestDate.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateMinBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date;
+            //var to store BookingDate
+            string BookigDate = TestDate.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateMinPlusOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(1);
+            //var to store BookingDate
+            string BookigDate = TestDate.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateMaxLessOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(-1);
+            //var to store BookingDate
+            string BookigDate = TestDate.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateMaxBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date;
+            //var to store BookingDate
+            string BookigDate = TestDate.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateMaxPlusOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(1);
+            //var to store BookingDate
+            string BookigDate = TestDate.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateMidBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date;
+            //var to store BookingDate
+            string BookigDate = TestDate.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateExtremeMax()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(100);
+            //var to store BookingDate
+            string BookigDate = TestDate.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateInvalidData()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+           // DateTime TestDate;
+            //asign some data to testdata
+            //TestDate = DateTime.Now.Date.AddDays(100);
+            //var to store BookingDate
+            string BookigDate = "this is not a date";
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+
+        [TestMethod]
+        public void CheckInDateExtremeMini()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(-100);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = TestDate.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void CheckInDateMiniLessOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(-1);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = TestDate.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void CheckInDateMiniBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date;
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = TestDate.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckInDateMiniPlusOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(1);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = TestDate.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.AddDays(20).ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+
+        [TestMethod]
+        public void CheckInDateMaxLessOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(29);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = TestDate.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.AddDays(35).ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckInDateMaxBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(30);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = TestDate.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.AddDays(35).ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckInDateMaxPlusOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(31);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = TestDate.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void CheckInDateMidBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(15);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = TestDate.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.AddDays(35).ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+
+        [TestMethod]
+        public void CheckInDateDateInvalidData()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            // DateTime TestDate;
+            //asign some data to testdata
+            //TestDate = DateTime.Now.Date.AddDays(100);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = "this is not a date";
+            //var to store CheckOutDate
+            string CheckOutDate = DateTime.Now.Date.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateExtremeMini()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(-100);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = TestDate.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateMiniLessOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(-1);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = TestDate.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+
+        [TestMethod]
+        public void CheckOutDateMiniBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date;
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = TestDate.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateMiniPlusOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(1);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = TestDate.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateMaxLessOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(29);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = TestDate.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateMaxBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(30);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = TestDate.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateMaxPlusOne()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(31);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = TestDate.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateMidBoundary()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(15);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = TestDate.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateExtremeMax()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            DateTime TestDate;
+            //asign some data to testdata
+            TestDate = DateTime.Now.Date.AddDays(100);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = TestDate.ToString();
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateInvalidData()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Ok = false;
+            //var to store NumOfNights
+            string NumOfNights = "15";
+            //create a var to store test data
+            // DateTime TestDate;
+            //asign some data to testdata
+            //TestDate = DateTime.Now.Date.AddDays(100);
+            //var to store BookingDate
+            string BookigDate = DateTime.Now.Date.ToString();
+            //var to store checkInDate
+            string CheckInDate = DateTime.Now.Date.ToString();
+            //var to store CheckOutDate
+            string CheckOutDate = "this is not a date";
+            //invoke the method
+            Ok = aBooking.Valid(NumOfNights, BookigDate, CheckInDate, CheckOutDate);
+            //test to see that the result is correct
+            Assert.IsFalse(Ok);
         }
     }
 }

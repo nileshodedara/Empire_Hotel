@@ -56,12 +56,8 @@
     <Compile Include="UnitTestStaff.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyclassLibrary\MyclassLibrary.csproj">
-      <Project>{8df5074d-469b-4c2d-8f0a-595b5bf0b441}</Project>
-      <Name>MyclassLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="I:\CodeCadets_Empire\Empire_Hotel\ClassLibrary\ClassLibrary.csproj">
-      <Project>{3205fe2d-7fd7-4586-81a0-dd265cb6491d}</Project>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{36da6067-03ae-4be7-a841-a2eb59d0c295}</Project>
       <Name>ClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
