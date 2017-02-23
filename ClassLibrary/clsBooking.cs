@@ -20,6 +20,8 @@ namespace ClassLibrary
         //private data member for the NumOfNights property
         private Int32 aNumOfNights;
 
+        //commente added to learn git hub
+
         //public property for BookingId
         public int BookingID
         {
