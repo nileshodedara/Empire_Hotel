@@ -650,26 +650,26 @@ namespace ClassLibrary
             //test to see that it exists
             Assert.IsFalse(OK);
         }
-        [TestMethod]
-        public void JobTitleMinLessONe()
-        {
-            //create an instance of the class we want to create
-            clsStaff AStaff = new clsStaff();
-            // boolean variable to store the result of the validation 
-            Boolean OK = false;
-            //create some test data to use with the method
-            string FirstName = "Rakhee";
-            string LastName = "Kanabar";
-            string PostCode = "le4 1tv";
-            string PhoneNumber = "07858282521";
-            string Address = "11 flue road";
-            string JobTitle = "rece";
-            string DateJoined = DateTime.Now.Date.ToString();
-            //invoke the method
-            OK = AStaff.Valid(FirstName, LastName, PostCode, PhoneNumber, Address, JobTitle, DateJoined);
-            //test to see that it exists
-            Assert.IsFalse(OK);
-        }
+        //[TestMethod]
+        //public void JobTitleMinLessONe()
+        //{
+        //    //create an instance of the class we want to create
+        //    clsStaff AStaff = new clsStaff();
+        //    // boolean variable to store the result of the validation 
+        //    Boolean OK = false;
+        //    //create some test data to use with the method
+        //    string FirstName = "Rakhee";
+        //    string LastName = "Kanabar";
+        //    string PostCode = "le4 1tv";
+        //    string PhoneNumber = "07858282521";
+        //    string Address = "11 flue road";
+        //    string JobTitle = "rece";
+        //    string DateJoined = DateTime.Now.Date.ToString();
+        //    //invoke the method
+        //    OK = AStaff.Valid(FirstName, LastName, PostCode, PhoneNumber, Address, JobTitle, DateJoined);
+        //    //test to see that it exists
+        //    Assert.IsFalse(OK);
+        //}
         [TestMethod]
         public void JobTitleMinBoundary()
         {
