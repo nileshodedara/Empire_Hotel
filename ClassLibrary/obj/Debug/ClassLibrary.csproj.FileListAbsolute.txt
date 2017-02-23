@@ -18,3 +18,8 @@ E:\YEAR2 Project Management\System\ClassLibrary\bin\Debug\ClassLibrary.pdb
 E:\YEAR2 Project Management\System\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 E:\YEAR2 Project Management\System\ClassLibrary\obj\Debug\ClassLibrary.dll
 E:\YEAR2 Project Management\System\ClassLibrary\obj\Debug\ClassLibrary.pdb
+H:\Documents\Year 2\GitHub\ClassLibrary\bin\Debug\ClassLibrary.dll
+H:\Documents\Year 2\GitHub\ClassLibrary\bin\Debug\ClassLibrary.pdb
+H:\Documents\Year 2\GitHub\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+H:\Documents\Year 2\GitHub\ClassLibrary\obj\Debug\ClassLibrary.dll
+H:\Documents\Year 2\GitHub\ClassLibrary\obj\Debug\ClassLibrary.pdb

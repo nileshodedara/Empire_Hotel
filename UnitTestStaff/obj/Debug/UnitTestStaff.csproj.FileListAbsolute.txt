@@ -26,3 +26,10 @@ E:\YEAR2 Project Management\System\UnitTestStaff\bin\Debug\ClassLibrary.pdb
 E:\YEAR2 Project Management\System\UnitTestStaff\obj\Debug\UnitTestStaff.csprojResolveAssemblyReference.cache
 E:\YEAR2 Project Management\System\UnitTestStaff\obj\Debug\MyTestProject.dll
 E:\YEAR2 Project Management\System\UnitTestStaff\obj\Debug\MyTestProject.pdb
+H:\Documents\Year 2\GitHub\UnitTestStaff\bin\Debug\MyTestProject.dll
+H:\Documents\Year 2\GitHub\UnitTestStaff\bin\Debug\MyTestProject.pdb
+H:\Documents\Year 2\GitHub\UnitTestStaff\bin\Debug\ClassLibrary.dll
+H:\Documents\Year 2\GitHub\UnitTestStaff\bin\Debug\ClassLibrary.pdb
+H:\Documents\Year 2\GitHub\UnitTestStaff\obj\Debug\UnitTestStaff.csprojResolveAssemblyReference.cache
+H:\Documents\Year 2\GitHub\UnitTestStaff\obj\Debug\MyTestProject.dll
+H:\Documents\Year 2\GitHub\UnitTestStaff\obj\Debug\MyTestProject.pdb
