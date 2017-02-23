@@ -217,7 +217,8 @@ namespace ClassLibrary
         {
             clsRooms NewRoom = new clsRooms(); //create an instance of the class we want to create
             Boolean OK = false; //boolean variable to store the result of the validation 
-            string RoomType = "STANTwin B"; // this should be ok
+            string RoomType = ""; // this should be ok
+            RoomType = RoomType.PadRight(19, 'H');
             string HotelID = "HLT10AD";
             string Inventory = "Blow Dryer";
             OK = NewRoom.Valid(HotelID, Inventory, RoomType); //invoke the method 
@@ -229,7 +230,8 @@ namespace ClassLibrary
         {
             clsRooms NewRoom = new clsRooms(); //create an instance of the class we want to create
             Boolean OK = false; //boolean variable to store the result of the validation 
-            string RoomType = "Family Bed"; // this should be ok
+            string RoomType = ""; // this should be ok
+            RoomType = RoomType.PadRight(20, 'H');
             string HotelID = "HLT10AD";
             string Inventory = "Blow Dryer";
             OK = NewRoom.Valid(HotelID, Inventory, RoomType); //invoke the method 
@@ -241,7 +243,8 @@ namespace ClassLibrary
         {
             clsRooms NewRoom = new clsRooms(); //create an instance of the class we want to create
             Boolean OK = false; //boolean variable to store the result of the validation 
-            string RoomType = "STDN Twin Bed"; // this should trigger and error
+            string RoomType = "";// = "STDN Twin Bed"; // this should trigger and error
+            RoomType = RoomType.PadRight(21, 'H');
             string HotelID = "HLT10AD";
             string Inventory = "Blow Dryer";
             OK = NewRoom.Valid(HotelID, Inventory, RoomType); //invoke the method 
@@ -253,7 +256,7 @@ namespace ClassLibrary
         {
             clsRooms NewRoom = new clsRooms(); //create an instance of the class we want to create
             Boolean OK = false; //boolean variable to store the result of the validation 
-            string RoomType = "STDN T "; // this should be ok
+            string RoomType = "STDN Twin "; // this should be ok
             string HotelID = "HLT10AD";
             string Inventory = "Blow Dryer";
             OK = NewRoom.Valid(HotelID, Inventory, RoomType); //invoke the method 
@@ -391,5 +394,5 @@ namespace ClassLibrary
 
 }
 
- 
+
 

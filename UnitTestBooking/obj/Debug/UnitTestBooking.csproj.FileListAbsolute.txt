@@ -19,3 +19,10 @@ H:\Desktop\github\Empire_Hotel\UnitTestBooking\bin\Debug\ClassLibrary.pdb
 H:\Desktop\github\Empire_Hotel\UnitTestBooking\obj\Debug\UnitTestBooking.csprojResolveAssemblyReference.cache
 H:\Desktop\github\Empire_Hotel\UnitTestBooking\obj\Debug\BookingTestProject.dll
 H:\Desktop\github\Empire_Hotel\UnitTestBooking\obj\Debug\BookingTestProject.pdb
+E:\YEAR2 Project Management\System\UnitTestBooking\bin\Debug\BookingTestProject.dll
+E:\YEAR2 Project Management\System\UnitTestBooking\bin\Debug\BookingTestProject.pdb
+E:\YEAR2 Project Management\System\UnitTestBooking\bin\Debug\ClassLibrary.dll
+E:\YEAR2 Project Management\System\UnitTestBooking\bin\Debug\ClassLibrary.pdb
+E:\YEAR2 Project Management\System\UnitTestBooking\obj\Debug\UnitTestBooking.csprojResolveAssemblyReference.cache
+E:\YEAR2 Project Management\System\UnitTestBooking\obj\Debug\BookingTestProject.dll
+E:\YEAR2 Project Management\System\UnitTestBooking\obj\Debug\BookingTestProject.pdb

@@ -32,7 +32,7 @@ namespace ClassLibrary
                 OK = false; //set the flag ok to false
 
             }
-            if (roomType.Length > 10)
+            if (roomType.Length > 20)
 
             {
                 OK = false;  //set the flag ok to false

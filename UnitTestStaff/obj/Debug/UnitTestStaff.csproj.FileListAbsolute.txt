@@ -19,3 +19,10 @@ H:\Desktop\github\Empire_Hotel\UnitTestStaff\bin\Debug\ClassLibrary.pdb
 H:\Desktop\github\Empire_Hotel\UnitTestStaff\obj\Debug\UnitTestStaff.csprojResolveAssemblyReference.cache
 H:\Desktop\github\Empire_Hotel\UnitTestStaff\obj\Debug\MyTestProject.dll
 H:\Desktop\github\Empire_Hotel\UnitTestStaff\obj\Debug\MyTestProject.pdb
+E:\YEAR2 Project Management\System\UnitTestStaff\bin\Debug\MyTestProject.dll
+E:\YEAR2 Project Management\System\UnitTestStaff\bin\Debug\MyTestProject.pdb
+E:\YEAR2 Project Management\System\UnitTestStaff\bin\Debug\ClassLibrary.dll
+E:\YEAR2 Project Management\System\UnitTestStaff\bin\Debug\ClassLibrary.pdb
+E:\YEAR2 Project Management\System\UnitTestStaff\obj\Debug\UnitTestStaff.csprojResolveAssemblyReference.cache
+E:\YEAR2 Project Management\System\UnitTestStaff\obj\Debug\MyTestProject.dll
+E:\YEAR2 Project Management\System\UnitTestStaff\obj\Debug\MyTestProject.pdb
