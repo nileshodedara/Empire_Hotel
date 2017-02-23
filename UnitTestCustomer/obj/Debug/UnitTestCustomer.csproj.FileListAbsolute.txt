@@ -12,3 +12,10 @@ C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestCustomer\bin\Debug\ClassLib
 C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestCustomer\obj\Debug\UnitTestCustomer.csprojResolveAssemblyReference.cache
 C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestCustomer\obj\Debug\UnitTestCustomer.dll
 C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestCustomer\obj\Debug\UnitTestCustomer.pdb
+H:\Desktop\github\Empire_Hotel\UnitTestCustomer\bin\Debug\UnitTestCustomer.dll
+H:\Desktop\github\Empire_Hotel\UnitTestCustomer\bin\Debug\UnitTestCustomer.pdb
+H:\Desktop\github\Empire_Hotel\UnitTestCustomer\bin\Debug\ClassLibrary.dll
+H:\Desktop\github\Empire_Hotel\UnitTestCustomer\bin\Debug\ClassLibrary.pdb
+H:\Desktop\github\Empire_Hotel\UnitTestCustomer\obj\Debug\UnitTestCustomer.csprojResolveAssemblyReference.cache
+H:\Desktop\github\Empire_Hotel\UnitTestCustomer\obj\Debug\UnitTestCustomer.dll
+H:\Desktop\github\Empire_Hotel\UnitTestCustomer\obj\Debug\UnitTestCustomer.pdb

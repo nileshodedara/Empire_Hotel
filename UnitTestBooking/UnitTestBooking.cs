@@ -6,7 +6,7 @@ using ClassLibrary;
 namespace ClassLibrary
 {
     [TestClass]
-    public class BookingUnitTest
+    public class UnitTestBooking
     {
         [TestMethod]
         public void InstanceOk()

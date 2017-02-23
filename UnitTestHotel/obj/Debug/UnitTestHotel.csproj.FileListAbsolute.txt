@@ -12,3 +12,10 @@ C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestHotel\bin\Debug\ClassLibrar
 C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestHotel\obj\Debug\UnitTestHotel.csprojResolveAssemblyReference.cache
 C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestHotel\obj\Debug\MyFramework.dll
 C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestHotel\obj\Debug\MyFramework.pdb
+H:\Desktop\github\Empire_Hotel\UnitTestHotel\bin\Debug\MyFramework.dll
+H:\Desktop\github\Empire_Hotel\UnitTestHotel\bin\Debug\MyFramework.pdb
+H:\Desktop\github\Empire_Hotel\UnitTestHotel\bin\Debug\ClassLibrary.dll
+H:\Desktop\github\Empire_Hotel\UnitTestHotel\bin\Debug\ClassLibrary.pdb
+H:\Desktop\github\Empire_Hotel\UnitTestHotel\obj\Debug\UnitTestHotel.csprojResolveAssemblyReference.cache
+H:\Desktop\github\Empire_Hotel\UnitTestHotel\obj\Debug\MyFramework.dll
+H:\Desktop\github\Empire_Hotel\UnitTestHotel\obj\Debug\MyFramework.pdb

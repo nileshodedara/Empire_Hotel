@@ -10,9 +10,9 @@ namespace ClassLibrary
     /// Summary description for MyTests
     /// </summary>
     [TestClass]
-    public class MyTests
+    public class UnitTestHotel
     {
-        public MyTests()
+        public UnitTestHotel()
         {
             //
             // TODO: Add constructor logic here
