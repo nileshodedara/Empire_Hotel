@@ -3,3 +3,8 @@ C:\Users\Nilesh\Desktop\github\Empire_Hotel\ClassLibrary\bin\Debug\ClassLibrary.
 C:\Users\Nilesh\Desktop\github\Empire_Hotel\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Nilesh\Desktop\github\Empire_Hotel\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\Nilesh\Desktop\github\Empire_Hotel\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\p15226811\Source\Repos\Empire_Hotel\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\p15226811\Source\Repos\Empire_Hotel\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\p15226811\Source\Repos\Empire_Hotel\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\p15226811\Source\Repos\Empire_Hotel\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\p15226811\Source\Repos\Empire_Hotel\ClassLibrary\obj\Debug\ClassLibrary.pdb

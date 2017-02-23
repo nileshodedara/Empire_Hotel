@@ -5,3 +5,10 @@ C:\Users\Nilesh\Desktop\github\Empire_Hotel\UnitTestStaff\bin\Debug\ClassLibrary
 C:\Users\Nilesh\Desktop\github\Empire_Hotel\UnitTestStaff\obj\Debug\MyTestProject.dll
 C:\Users\Nilesh\Desktop\github\Empire_Hotel\UnitTestStaff\obj\Debug\MyTestProject.pdb
 C:\Users\Nilesh\Desktop\github\Empire_Hotel\UnitTestStaff\obj\Debug\UnitTestStaff.csprojResolveAssemblyReference.cache
+C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestStaff\bin\Debug\MyTestProject.dll
+C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestStaff\bin\Debug\MyTestProject.pdb
+C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestStaff\bin\Debug\ClassLibrary.dll
+C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestStaff\bin\Debug\ClassLibrary.pdb
+C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestStaff\obj\Debug\UnitTestStaff.csprojResolveAssemblyReference.cache
+C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestStaff\obj\Debug\MyTestProject.dll
+C:\Users\p15226811\Source\Repos\Empire_Hotel\UnitTestStaff\obj\Debug\MyTestProject.pdb
