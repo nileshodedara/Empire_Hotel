@@ -33,3 +33,10 @@ H:\Documents\Year 2\GitHub\UnitTestCustomer\bin\Debug\ClassLibrary.pdb
 H:\Documents\Year 2\GitHub\UnitTestCustomer\obj\Debug\UnitTestCustomer.csprojResolveAssemblyReference.cache
 H:\Documents\Year 2\GitHub\UnitTestCustomer\obj\Debug\UnitTestCustomer.dll
 H:\Documents\Year 2\GitHub\UnitTestCustomer\obj\Debug\UnitTestCustomer.pdb
+H:\Documents\YEAR 2\GitPractic\UnitTestCustomer\bin\Debug\UnitTestCustomer.dll
+H:\Documents\YEAR 2\GitPractic\UnitTestCustomer\bin\Debug\UnitTestCustomer.pdb
+H:\Documents\YEAR 2\GitPractic\UnitTestCustomer\bin\Debug\ClassLibrary.dll
+H:\Documents\YEAR 2\GitPractic\UnitTestCustomer\bin\Debug\ClassLibrary.pdb
+H:\Documents\YEAR 2\GitPractic\UnitTestCustomer\obj\Debug\UnitTestCustomer.csprojResolveAssemblyReference.cache
+H:\Documents\YEAR 2\GitPractic\UnitTestCustomer\obj\Debug\UnitTestCustomer.dll
+H:\Documents\YEAR 2\GitPractic\UnitTestCustomer\obj\Debug\UnitTestCustomer.pdb

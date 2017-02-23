@@ -33,3 +33,10 @@ H:\Documents\Year 2\GitHub\UnitTestRoom\bin\Debug\ClassLibrary.pdb
 H:\Documents\Year 2\GitHub\UnitTestRoom\obj\Debug\UnitTestRoom.csprojResolveAssemblyReference.cache
 H:\Documents\Year 2\GitHub\UnitTestRoom\obj\Debug\MyTestProject.dll
 H:\Documents\Year 2\GitHub\UnitTestRoom\obj\Debug\MyTestProject.pdb
+H:\Documents\YEAR 2\GitPractic\UnitTestRoom\bin\Debug\MyTestProject.dll
+H:\Documents\YEAR 2\GitPractic\UnitTestRoom\bin\Debug\MyTestProject.pdb
+H:\Documents\YEAR 2\GitPractic\UnitTestRoom\bin\Debug\ClassLibrary.dll
+H:\Documents\YEAR 2\GitPractic\UnitTestRoom\bin\Debug\ClassLibrary.pdb
+H:\Documents\YEAR 2\GitPractic\UnitTestRoom\obj\Debug\UnitTestRoom.csprojResolveAssemblyReference.cache
+H:\Documents\YEAR 2\GitPractic\UnitTestRoom\obj\Debug\MyTestProject.dll
+H:\Documents\YEAR 2\GitPractic\UnitTestRoom\obj\Debug\MyTestProject.pdb
