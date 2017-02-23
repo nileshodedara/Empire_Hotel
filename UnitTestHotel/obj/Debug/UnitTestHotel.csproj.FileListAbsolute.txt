@@ -19,3 +19,10 @@ H:\Desktop\github\Empire_Hotel\UnitTestHotel\bin\Debug\ClassLibrary.pdb
 H:\Desktop\github\Empire_Hotel\UnitTestHotel\obj\Debug\UnitTestHotel.csprojResolveAssemblyReference.cache
 H:\Desktop\github\Empire_Hotel\UnitTestHotel\obj\Debug\MyFramework.dll
 H:\Desktop\github\Empire_Hotel\UnitTestHotel\obj\Debug\MyFramework.pdb
+E:\YEAR2 Project Management\System\UnitTestHotel\bin\Debug\MyFramework.dll
+E:\YEAR2 Project Management\System\UnitTestHotel\bin\Debug\MyFramework.pdb
+E:\YEAR2 Project Management\System\UnitTestHotel\bin\Debug\ClassLibrary.dll
+E:\YEAR2 Project Management\System\UnitTestHotel\bin\Debug\ClassLibrary.pdb
+E:\YEAR2 Project Management\System\UnitTestHotel\obj\Debug\UnitTestHotel.csprojResolveAssemblyReference.cache
+E:\YEAR2 Project Management\System\UnitTestHotel\obj\Debug\MyFramework.dll
+E:\YEAR2 Project Management\System\UnitTestHotel\obj\Debug\MyFramework.pdb
