@@ -16,19 +16,19 @@ namespace ClassLibrary
             Assert.IsNotNull(ACustomer);
 
         }
-        //[TestMethod]
-        //public void AddressOK()
-        //{
-        //    //create an instance of myscustomerclass
-        //    clsCustomer ACustomer = new clsCustomer();
-        //    //variable to store validation
-        //    string testdata = "coventry";
-        //    //assign teset data to the property
-        //    ACustomer.Address = testdata;
-        //    //test to see that it exists
-        //    Assert.AreEqual(ACustomer.Address, testdata);
+        [TestMethod]
+        public void AddressOK()
+        {
+            //create an instance of myscustomerclass
+            clsCustomer ACustomer = new clsCustomer();
+            //variable to store validation
+            string testdata = "coventry";
+            //assign teset data to the property
+            ACustomer.Address = testdata;
+            //test to see that it exists
+            Assert.AreEqual(ACustomer.Address, testdata);
 
-        //}
+        }
         [TestMethod]
         public void ContactNumberOK()
         {
