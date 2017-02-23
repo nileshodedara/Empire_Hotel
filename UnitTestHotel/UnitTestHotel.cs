@@ -664,5 +664,84 @@ namespace ClassLibrary
             OK = AHotel.Valid(Name, Address, PostCode, PhoneNo, RoomCapacity, DateAdded);
             Assert.IsFalse(OK); //test to see that the result is correct
         }
+
+        [TestMethod]
+        public void DateAddedMinLessOne()
+        {
+            clsHotel AHotel = new clsHotel(); //create an instance of the class we want to create
+            Boolean OK = false; //boolean variable to store the result of the validation
+            //create some test data to pass the method
+            string Name = "Premier Inn";
+            string Address = "Test Street";
+            string PostCode = "Le1 9BH";
+            string PhoneNo = "07123456789";
+            string RoomCapacity = "300";
+            DateTime TestDate; //create a variable to store the test data
+            TestDate = DateTime.Now.Date; //set the date to todaus date
+            TestDate = TestDate.AddDays(-1); //change current time to 1 day less
+            string DateAdded = TestDate.ToString();
+            //invoke the method
+            OK = AHotel.Valid(Name, Address, PostCode, PhoneNo, RoomCapacity, DateAdded);
+            Assert.IsFalse(OK); //test to see that the result is correct
+        }
+
+        [TestMethod]
+        public void DateAddedMin()
+        {
+            clsHotel AHotel = new clsHotel(); //create an instance of the class we want to create
+            Boolean OK = false; //boolean variable to store the result of the validation
+            //create some test data to pass the method
+            string Name = "Premier Inn";
+            string Address = "Test Street";
+            string PostCode = "Le1 9BH";
+            string PhoneNo = "07123456789";
+            string RoomCapacity = "300";
+            DateTime TestDate; //create a variable to store the test data
+            TestDate = DateTime.Now.Date; //set the date to todays date
+            string DateAdded = TestDate.ToString();
+            //invoke the method
+            OK = AHotel.Valid(Name, Address, PostCode, PhoneNo, RoomCapacity, DateAdded);
+            Assert.IsTrue(OK); //test to see that the result is correct
+        }
+
+        [TestMethod]
+        public void DateAddedMinPlusOne()
+        {
+            clsHotel AHotel = new clsHotel(); //create an instance of the class we want to create
+            Boolean OK = false; //boolean variable to store the result of the validation
+            //create some test data to pass the method
+            string Name = "Premier Inn";
+            string Address = "Test Street";
+            string PostCode = "Le1 9BH";
+            string PhoneNo = "07123456789";
+            string RoomCapacity = "300";
+            DateTime TestDate; //create a variable to store the test data
+            TestDate = DateTime.Now.Date; //set the date to todaus date
+            TestDate = TestDate.AddDays(1); //change current time to 1 day plus
+            string DateAdded = TestDate.ToString();
+            //invoke the method
+            OK = AHotel.Valid(Name, Address, PostCode, PhoneNo, RoomCapacity, DateAdded);
+            Assert.IsFalse(OK); //test to see that the result is correct
+        }
+
+        [TestMethod]
+        public void DateAddedExtremeMax()
+        {
+            clsHotel AHotel = new clsHotel(); //create an instance of the class we want to create
+            Boolean OK = false; //boolean variable to store the result of the validation
+            //create some test data to pass the method
+            string Name = "Premier Inn";
+            string Address = "Test Street";
+            string PostCode = "Le1 9BH";
+            string PhoneNo = "07123456789";
+            string RoomCapacity = "300";
+            DateTime TestDate; //create a variable to store the test data
+            TestDate = DateTime.Now.Date; //set the date to todaus date
+            TestDate = TestDate.AddYears(100); //change current time to 100 years pluss
+            string DateAdded = TestDate.ToString();
+            //invoke the method
+            OK = AHotel.Valid(Name, Address, PostCode, PhoneNo, RoomCapacity, DateAdded);
+            Assert.IsFalse(OK); //test to see that the result is correct
+        }
     }
 }
