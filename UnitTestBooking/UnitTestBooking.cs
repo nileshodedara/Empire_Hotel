@@ -1071,5 +1071,181 @@ namespace ClassLibrary
             //test to see that the result is correct
             Assert.IsFalse(Ok);
         }
+
+        [TestMethod]
+        public void BookingIdFound()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Found = false;
+            //boolean var to record if data is ok
+            Boolean Ok = true;                    
+            //create some test data to use with the method
+            Int32 BookingID = 1;
+            //invoke the method
+            Found = aBooking.Find(BookingID);
+            //chechk the data is num
+            if (aBooking.BookingID !=1)
+            {
+                Ok = false;
+            }
+            //test to see that two values are same
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CustomerIdFound()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Found = false;
+            //boolean var to record if data is ok
+            Boolean Ok = true;
+            //create some test data to use with the method
+            Int32 BookingID = 1;
+            //invoke the method
+            Found = aBooking.Find(BookingID);
+            //chechk the data is num
+            if (aBooking.CustomerID != 1)
+            {
+                Ok = false;
+            }
+            //test to see that two values are same
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void HotelIdFound()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Found = false;
+            //boolean var to record if data is ok
+            Boolean Ok = true;
+            //create some test data to use with the method
+            Int32 BookingID = 1;
+            //invoke the method
+            Found = aBooking.Find(BookingID);
+            //chechk the data is num
+            if (aBooking.HotelID != 1)
+            {
+                Ok = false;
+            }
+            //test to see that two values are same
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void RoomNoFound()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Found = false;
+            //boolean var to record if data is ok
+            Boolean Ok = true;
+            //create some test data to use with the method
+            Int32 BookingID = 1;
+            //invoke the method
+            Found = aBooking.Find(BookingID);
+            //chechk the data is num
+            if (aBooking.RoomNo != 1)
+            {
+                Ok = false;
+            }
+            //test to see that two values are same
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void BookingDateFound()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Found = false;
+            //boolean var to record if data is ok
+            Boolean Ok = true;
+            //create some test data to use with the method
+            Int32 BookingID = 1;
+            //invoke the method
+            Found = aBooking.Find(BookingID);
+            //chechk the data is num
+            if (aBooking.BookingDate != Convert.ToDateTime("22/2/2017"))
+            {
+                Ok = false;
+            }
+            //test to see that two values are same
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckInDateFound()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Found = false;
+            //boolean var to record if data is ok
+            Boolean Ok = true;
+            //create some test data to use with the method
+            Int32 BookingID = 1;
+            //invoke the method
+            Found = aBooking.Find(BookingID);
+            //chechk the data is num
+            if (aBooking.CheckInDate != Convert.ToDateTime("22/2/2017"))
+            {
+                Ok = false;
+            }
+            //test to see that two values are same
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void CheckOutDateFound()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Found = false;
+            //boolean var to record if data is ok
+            Boolean Ok = true;
+            //create some test data to use with the method
+            Int32 BookingID = 1;
+            //invoke the method
+            Found = aBooking.Find(BookingID);
+            //chechk the data is num
+            if (aBooking.CheckOutDate != Convert.ToDateTime("22/2/2017"))
+            {
+                Ok = false;
+            }
+            //test to see that two values are same
+            Assert.IsTrue(Ok);
+        }
+
+        [TestMethod]
+        public void NumOfNightsFound()
+        {
+            //creat an instance of clsBooking class
+            clsBooking aBooking = new clsBooking();
+            //boolean var to store the result of the validation
+            Boolean Found = false;
+            //boolean var to record if data is ok
+            Boolean Ok = true;
+            //create some test data to use with the method
+            Int32 BookingID = 1;
+            //invoke the method
+            Found = aBooking.Find(BookingID);
+            //chechk the data is num
+            if (aBooking.NumOfNights != 1)
+            {
+                Ok = false;
+            }
+            //test to see that two values are same
+            Assert.IsTrue(Ok);
+        }
     }
 }
